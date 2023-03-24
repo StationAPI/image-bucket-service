@@ -1,7 +1,9 @@
 package db
 
+import "gorm.io/gorm"
+
 type Image struct {
-	Data string `json:"image"` // b64 encoded image data
+	Data string `json:"data"` // b64 encoded image data
 }
 
 func CreateImage(image Image, db gorm.DB) {
